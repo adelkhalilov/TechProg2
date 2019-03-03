@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 2.8)
+project(bot)
+include_directories(.)
+execute_process(COMMAND python3 preparing.py WORKING_DIRECTORY ../A)
+add_subdirectory(B)
+add_executable(bot C/main.cpp)
+target_link_libraries(bot lib)
