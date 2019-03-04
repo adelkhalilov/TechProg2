@@ -1,7 +1,6 @@
-#include <iostream>
 #include "main.h"
 int main()
 {
-	lib();
-	index();
+	func_index();
+	func_lib();
 }
